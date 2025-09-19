@@ -1,0 +1,206 @@
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.list-styles-reset {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+.wrapper {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+body {
+  font-size: 12px;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+  min-width: 320px;
+  color: #000000;
+  background-color: #a2ddb5;
+}
+
+.header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color:#79bd8f;
+}
+
+.header-logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 65px;
+}
+
+.header-main-title {
+  font-size: 16px;
+  line-height: 18px;
+  margin-left: 4px;
+}
+
+.next-line {
+  display: block;
+}
+
+.operating-info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.operating-info-item {
+  font-size: 12px;
+}
+
+.operating-info-item:last-child {
+  font-size: 14px;
+}
+
+.header-content {
+  margin: auto;
+  max-width: 500px;
+}
+
+.header-slogan {
+  margin-top: 12px;
+}
+
+.header-slogan h2 {
+  font-size: 16px;
+}
+
+.header-slogan p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.contact-us-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-button {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-active {
+  display: flex;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: auto;
+  background-color: rgba(143, 188, 143, 0.9);
+  border: 2px solid rgb(121, 189, 143);
+  border-radius: 20px;
+}
+
+.links {
+  display: flex;
+  width: 225px;
+  padding: 50px 25px;
+}
+
+.link-item:nth-child(2) {
+  margin-left: 17%;
+  margin-right: 17%;
+}
+
+.links a {
+  display: flex;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+}
+
+.link-pinterest {
+  position: relative;
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+  background-size: 50px;
+}
+
+.link-pinterest::after {
+  position: absolute;
+  content: 'Pinterest';
+  font-size: 10.5px;
+  top: 55px;
+}
+
+.link-dribble {
+  position: relative;
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg");
+  background-size: 50px;
+}
+
+.link-dribble::after {
+  position: absolute;
+  content: 'Dribbble';
+  font-size: 10.5px;
+  top: 55px;
+  left: 1px;
+}
+
+.link-tumblr {
+  position: relative;
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+  background-size: 50px;
+}
+
+.link-tumblr::after {
+  position: absolute;
+  content: 'Tumblr';
+  font-size: 10.5px;
+  top: 55px;
+  left: 3px;
+}
+
+.modal-close {
+  position: absolute;
+  font-size: 28px;
+  left: calc(100% - 28px);
+  cursor: pointer;
+}
